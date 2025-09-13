@@ -1,0 +1,11 @@
+# Ignore IDEA generated files
+/.idea/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore build output directories
+build/
+idea-build/
+/.envrc
+/.sdkmanrc
