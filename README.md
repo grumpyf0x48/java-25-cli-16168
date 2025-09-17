@@ -1,8 +1,9 @@
-# Un template d'Application en Ligne de Commande (CLI) avec Java 25 et les JEP 458, 511 et 512
+# Un exemple d'Application en Ligne de Commande (CLI) avec Java 25 et les JEP 458, 511 et 512
 
-Le template **java-25-quickstart** permet de démarrer une nouvelle application en commande ligne avec Java et Gradle.
+Cette application a été créée avec le template [java-25-quickstart](https://github.com/java-cli-apps/java-25-quickstart)
+qui permet de démarrer une nouvelle application en commande ligne avec Java et Gradle.
 
-Ce template utilise les JEPs suivantes :
+Ce template nécessite d'utiliser Java 25 ou une version supérieure car il utilise les JEPs suivantes :
 
 * La [JEP 458: Launch Multi-File Source-Code Programs](https://openjdk.org/jeps/458) qui permet de lancer un programme
   Java dont le code est réparti dans plusieurs fichiers sources sans avoir besoin de les compiler préalablement
@@ -17,7 +18,6 @@ Le template utilise la librairie [record-args](https://github.com/nipafx/record-
 [Nicolai Parlog](https://nipafx.dev), et qui s'appuie sur les `record` et les interfaces `sealed` pour définir les
 arguments de la ligne de commande et en effectuer le parsing.
 
-* [Créer une application depuis ce template](#créer-une-application-depuis-ce-template)
 * [Construire votre application](#construire-votre-application)
     * [Changer le nom de l'application](#changer-le-nom-de-lapplication)
     * [Lancer l'application localement](#lancer-lapplication-localement)
@@ -28,23 +28,6 @@ arguments de la ligne de commande et en effectuer le parsing.
     * [Lancer l'application installée](#lancer-lapplication-installée)
 * [Exécuter les tests](#exécuter-les-tests)
 * [Autres templates](#autres-templates)
-
-## Créer une application depuis ce template
-
-Pour créer une application depuis ce template, on procédera comme suit :
-
-```shell
-#!/usr/bin/env bash
-
-# Définir votre utilisateur GitHub
-read -p "Entrer votre utilisateur (ou organisation) GitHub: " user
-
-# Définir le nom du dépot à créer
-read -p "Entrer le nom du dépôt à créer: " repo
-
-# Créer une application java-25-cli-XXXX à partir du template https://github.com/java-cli-apps/java-25-quickstart
-gh repo create ${user}/${repo} --public --template git@github.com:java-cli-apps/java-25-quickstart.git
-```
 
 ## Construire votre application
 
